@@ -5,7 +5,7 @@ public class Ex1 {
             if (i < 40) {
                 int[] temporaryArray = new int[badGrades.length + 1];
                 System.arraycopy(badGrades, 0, temporaryArray, 0, badGrades.length);
-                temporaryArray[badGrades.length + 1] = i;
+                temporaryArray[badGrades.length] = i;
                 badGrades = new int[temporaryArray.length];
                 System.arraycopy(temporaryArray, 0, badGrades, 0, temporaryArray.length);
             }

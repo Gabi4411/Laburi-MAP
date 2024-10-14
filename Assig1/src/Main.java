@@ -2,14 +2,21 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Ex1 uni = new Ex1();
+        int[] grades = {48, 23, 38, 60, 88, 99, 97, 66};
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        System.out.println("Erste Methode: ");
+        for(int i = 0; i < uni.filterBadGradesOut(grades).length; i++) {
+            System.out.println(uni.filterBadGradesOut(grades)[i] + " ");
         }
+
+        System.out.println("Zweite Methode: " + uni.averageGrade(grades));
+
+        System.out.println("Dritte Methode: ");
+        for(int i : uni.roundedGrades(grades)) {
+            System.out.println(i + " ");
+        }
+
+        System.out.println("Vierte Methode: " + uni.maxGrade(grades));
     }
 }
