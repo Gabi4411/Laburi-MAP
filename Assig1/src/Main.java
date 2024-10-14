@@ -28,6 +28,38 @@ public class Main {
         System.out.println("Min Summe: " + arr.minSum(grades));
 
         //Ex3
+        int[] num1 = {1, 3, 0, 0, 0, 0, 0, 0, 0};
+        int[] num2 = {8, 7, 0, 0, 0, 0, 0, 0, 0};
+        int[] num3 = {8, 3, 0, 0, 0, 0, 0, 0, 0};
+        int[] num4 = {5, 4, 0, 0, 0, 0, 0, 0, 0};
+        int[] num5 = {2, 3, 6, 0, 0, 0, 0, 0, 0};
+
+        Ex3 numbers = new Ex3();
+        System.out.println("Sum: ");
+        for (int i : numbers.add(num1, num2)) {
+            System.out.printf(i + " ");
+        }
+        System.out.print("\n");
+
+        System.out.println("Difference: ");
+        for (int i : numbers.sub(num3, num4)) {
+            System.out.printf(i + " ");
+        }
+        System.out.print("\n");
+
+
+        System.out.println("Multiplication: ");
+        for (int i : numbers.mul(num5, 2)) {
+            System.out.printf(i + " ");
+        }
+        System.out.print("\n");
+
+
+        System.out.println("Division: ");
+        for (int i : numbers.div(num5, 2)) {
+            System.out.printf(i + " ");
+        }
+        System.out.print("\n");
 
     }
 }
