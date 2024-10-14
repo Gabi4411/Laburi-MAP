@@ -61,5 +61,14 @@ public class Main {
         }
         System.out.print("\n");
 
+        //Ex4
+        int[] keyboardPrices = {40, 35, 70, 15, 45};
+        int[] usbPrices = {20, 15, 30, 15};
+        Ex4 maga = new Ex4(keyboardPrices, usbPrices);
+
+        System.out.println("Lowest: " + maga.lowest());
+        System.out.println("Highest: " + maga.highest());
+        System.out.println("What USB Markus can afford: " + maga.whatUsbYouAfford(30));
+        System.out.println("What Markus can afford: " + maga.whatYouAfford(60));
     }
 }
